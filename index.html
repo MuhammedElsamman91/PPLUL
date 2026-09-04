@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>برنامج التمرين PPLUL</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>جدول التمرين اليومي PPLUL</h1>
+
+    <p id="today"></p>
+
+    <div class="day-selector">
+      <button onclick="showWorkout('push')">Push دفع</button>
+      <button onclick="showWorkout('pull')">Pull سحب</button>
+      <button onclick="showWorkout('legs')">Legs أرجل</button>
+      <button onclick="showWorkout('upper')">Upper علوي</button>
+      <button onclick="showWorkout('lower')">Lower سفلي</button>
+    </div>
+
+    <div class="workout-card">
+      <h2 id="day-title">اختر يوم التمرين</h2>
+
+      <div id="exercise-list"></div>
+
+      <button class="save-button" onclick="saveWorkout()">
+        حفظ بيانات التمرين
+      </button>
+    </div>
+
+    <div class="email-section">
+      <h3>إرسال جدول اليوم إلى بريدك الإلكتروني</h3>
+
+      <input
+        type="email"
+        id="user-email"
+        placeholder="أدخل بريدك الإلكتروني"
+        required
+      >
+
+      <button onclick="sendEmail()">إرسال عبر الإيميل</button>
+
+      <p id="email-status"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
