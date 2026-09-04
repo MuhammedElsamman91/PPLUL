@@ -1,0 +1,39 @@
+#today {
+  text-align: center;
+  color: #dce6f2;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.exercise {
+  border-bottom: 1px solid #334155;
+  padding: 12px 0;
+}
+
+.exercise h3 {
+  margin: 5px 0 12px;
+  font-size: 16px;
+}
+
+.exercise-inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.exercise-inputs input {
+  width: 33%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  text-align: right;
+}
+
+.save-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
